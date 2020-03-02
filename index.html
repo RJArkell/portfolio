@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rob Arkell</title>
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <img src="img/logo.png" alt="logo" class="page-header__item">
+    <nav class="page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="#intro" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="#about" role="menuitem" class="navigation-list__item">About</a>
+        </li>
+        <li role="presentation">
+          <a href="#work" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="intro">
+    <div class="profile">
+      <img src="img/profile.png" class="profile__portrait" alt="Rob's Portrait"><br>
+      <h1>Hello World</h1>
+      <p>My name is Rob Arkell.</p>
+      <p>I am a web developer from Canada.</p>
+      <a href="work.html" target="_blank">Check out some of my projects</a><br>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="about">
+      <h1>About</h1>
+      <p>My name is Rob Arkell. I live in Waterloo, Canada, have a Bachelor of Arts degree from Wilfrid Laurier
+        University, and am currently studying web development.
+        I have previous experience working in construction, operations management, manufacturing, and have also taught
+        English in South Korea.
+        In my free time I enjoy camping, gaming, travelling, learning history, and relaxing with my wife and dog.</p>
+      <table class="about">
+        <thead>
+          <tr>
+            <th>Skills</th>
+            <th>Years of Experience</th>
+            <th>Level of Expertise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>0.5</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>0.5</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>0.5</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>React</td>
+            <td>0.5</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>Node.js</td>
+            <td>0.5</td>
+            <td>Beginner</td>
+          </tr>
+        </tbody>
+      </table><br>
+      <a href="files/cv.pdf" class="button" download>Download my CV</a><br><br>
+  </section>
+
+  <section id="work">
+    <h1 class="profile">Work</h1>
+    <div class="project-list">
+      <div class="project-list__item">
+        <img src="img/edgeofumbra.png" width=100%>
+        <h2>Edge of Umbra</h2>
+        <p>
+          Edge of Umbra is a website aimed at providing users with info on some of the best action, horror, and
+          science-fiction movies available.
+          Users can sign up for an account, customize their profile, and make a list of favorite movies to keep track of
+          the movies they love and the ones they're interested in seeing.<br>
+          <br>
+          The front-end of the website was designed with React and the back-end was built with Node.js, Express, and
+          MongoDB.
+        </p>
+        <a href="https://edge-of-umbra.herokuapp.com/client/">View project</a>
+        <a href="https://github.com/RJArkell/edge-of-umbra">View code</a>
+        <a href="https://edge-of-umbra.herokuapp.com/documentation.html">View API</a>
+      </div>
+      <div class="project-list__item">
+        <img src="img/pokedex.png" width=100%>
+        <h2>Pokedex App</h2>
+        <p>
+          An interactive Pokedex with modals displaying the stats of all of the original Kanto region Pokemon.<br>
+          <br>
+          This app was built with Javascript and JQuery and fetches data from an external API.
+        </p>
+        <a href="https://rjarkell.github.io/pokedex-app/">View project</a>
+        <a href="https://github.com/RJArkell/pokedex-app">View code</a>
+      </div>
+      <div class="project-list__item">
+        <img src="img/meetup.png" width=100%>
+        <h2>Meetup App</h2>
+        <p>
+          A serverless progressive web app that uses the Meetup API to display which events are happening in your city,
+          or any city you search for.
+          Includes graphs to show the amount of events coming up in your area as well as how many people have RSVP'd for
+          the event.<br>
+          <br>
+          This app was designed with React and uses AWS Lambda to access an external API.
+        </p>
+        <a href="https://rjarkell.github.io/meetup/">View project</a>
+        <a href="https://github.com/RJArkell/meetup">View code</a>
+      </div>
+      <div class="project-list__item">
+        <img src="img/chat.png" width=100%>
+        <h2>Chat App</h2>
+        <p>
+          A mobile chat app which provides users with the capability to send and receive messages and share their
+          current location as well as photos from their phone's camera or gallery.<br>
+          <br>
+          The front-end for this app was built with React-Native and the database is hosted on Google Firebase.
+        </p>
+        <a href="img/chat-app.webm">View preview</a>
+        <a href="https://github.com/RJArkell/chat-app">View code</a>
+      </div>
+      <div class="project-list__item">
+        <img src="img/todo.png" width=100%>
+        <h2>Todo App</h2>
+        <p>
+          A simple todo app to help people keep track of their errands and appointments.<br>
+          <br>
+          Built with Vue.js.
+        </p>
+        <a href="https://rjarkell.github.io/todo/">View project</a>
+        <a href="https://github.com/RJArkell/todo">View code</a>
+      </div>
+      <div class="project-list__item">
+        <img src="img/quiz.png" width=100%>
+        <h2>Quiz App</h2>
+        <p>
+          A small quiz app with questions about French and math.<br>
+          <br>
+          Built with Angular.
+        </p>
+        <a href="https://rjarkell.github.io/quiz-app/">View project</a>
+        <a href="https://github.com/RJArkell/Quiz-App">View code</a>
+      </div>
+      <div class="project-list__item">
+        <h2>Your project here?</h2>
+        <p>
+          Looking for a front-end or back-end developer?
+        </P>
+        <a href="mailto:rjarkell1@gmail.com">Contact me</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="about">
+      <h1>Contact</h1>
+      Skype: <a href="skype:live:rjarkell1"> live:rjarkell1</a><br>
+      E-mail: <a href="mailto:rjarkell1@gmail.com">rjarkell1@gmail.com</a><br>
+      Twitter: <a href="https://twitter.com/arnketel">@arnketel</a><br>
+      Medium: <a href="https://medium.com/@arnketel">@arnketel</a><br><br><br><br><br>
+  </section>
+
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div>
+      <a href="https://www.github.com/RJArkell/" target="_blank"><img src="img/github.svg" class="social-media"
+          alt="github"></a>
+      <a href="https://twitter.com/arnketel" target="_blank"><img src="img/twitter.svg" class="social-media"
+          alt="twitter"></a>
+      <a href="https://www.linkedin.com/in/rob-arkell-378a2b1a3/" target="_blank"><img src="img/linkedin.svg"
+          class="social-media" alt="linkedin"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
