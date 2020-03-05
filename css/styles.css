@@ -1,7 +1,7 @@
 :root {
   --primary-color: #357b70;
   --secondary-color: #e0b354;
-  --dark-grey: #BCC4CB;
+  --dark-grey: rgb(18, 23, 27);
   --link: #48689c;
   --link-active: #489c79;
   --link-visited: #945cab;
@@ -16,8 +16,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  padding: 20px;
-  background-color: var(--light-grey);
+  background-color: var(--dark-grey);
 }
 
 h1 {
@@ -57,7 +56,7 @@ button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: var(--primary-color);
+  background-color: var(--dark-grey);
   color: var(--white);
   text-decoration: none;
   padding: 10px;
@@ -84,22 +83,44 @@ button:focus,
 }
 
 #intro {
-  background-color:var(--light-blue);
-  margin: 0 auto;
+  background: url('../img/skills.jpg');
+  background-size: cover;
+  height: 90vh;
   text-align: center;
+  margin: 0 auto;
+}
+
+#about {
+  background: url('../img/intro.jpg');
+  background-size: cover;
+  height: 90vh;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.text__box {
+  background-color:var(--light-grey);
+  border: 1px solid rgb(49, 47, 47);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
+  display: inline-block;
+  margin: 25px;
+	padding: 10px;
+  width: 25%;
 }
 
 #work {
-  background-color:var(--light-blue);
+  background-color:var(--light-grey);
   margin: 0 auto;
   text-align: center;
 }
 
-.about {
+.skill__table{
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
+
 .profile__portrait {
   width: 250px;
   margin-right: 40px;
@@ -112,24 +133,25 @@ button:focus,
 }
 
 #skills {
-  background-color:var(--light-blue);
+  background-color:var(--light-grey);
   margin: 0 auto;
   text-align: center;
 }
 
 #contact {
-  background-color:var(--light-blue);
+  background-color:var(--light-grey);
   margin: 0 auto;
   text-align: center;
 }
 
 .page-footer {
-  background-color:var(--light-blue);
+  background-color:var(--light-grey);
   clear: both;
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 20px;
+  border: 1px solid rgb(49, 47, 47);
 }
 
 .social-media {
@@ -141,10 +163,11 @@ button:focus,
 }
 
 .page-header {
-  background-color:var(--dark-grey);
+  background-color:var(--light-grey);
   display: flex;
   width: 100%;
   padding: 20px;
+  border: 1px solid rgb(49, 47, 47);
 }
 
 .page-header__item {
@@ -182,6 +205,7 @@ button:focus,
   color: var(--white);
   width: auto;
   padding: 20px;
+  border-radius: 10px;
 }
 
 .project-list__item:last-child {

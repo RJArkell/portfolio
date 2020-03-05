@@ -21,26 +21,27 @@
           <a href="#intro" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
         </li>
         <li role="presentation">
-          <a href="#skills" role="menuitem" class="navigation-list__item">About</a>
+          <a href="#skills" role="menuitem" class="navigation-list__item">Skills</a>
         </li>
         <li role="presentation">
-          <a href="#work" role="menuitem" class="navigation-list__item">Work</a>
+          <a href="#work" role="menuitem" class="navigation-list__item">Projects</a>
+        </li>
+        <li role="presentation">
+          <a href="#about" role="menuitem" class="navigation-list__item">About</a>
         </li>
         <li role="presentation">
           <a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+        <li role="presentation">
+          <a href="files/cv.pdf" class="button" download>Download my CV</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <section id="intro">
-    <div class="profile">
-      <img src="img/profile.png" class="profile__portrait" alt="Rob's Portrait">
-      <p>My name is Rob Arkell. I live in Waterloo, Canada, have a Bachelor of Arts degree from Wilfrid Laurier
-        University, and am currently studying web development.
-        I have previous experience working in construction, operations management, manufacturing, and have also taught
-        English in South Korea.
-        In my free time I enjoy camping, gaming, travelling, history, and relaxing with my wife and dog.</p>
+    <div class="text__box">
+      <p>Front-end and back-end web developer.</p>
       <a href="work.html" target="_blank">Check out some of my projects</a><br>
     </div>
   </section>
@@ -48,47 +49,47 @@
   <section id="skills">
     <div>
       <h1>Skills</h1>
-      <table class="about">
-        <thead>
-          <tr>
-            <th>Skills</th>
-            <th>Years of Experience</th>
-            <th>Level of Expertise</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-            <td>0.5</td>
-            <td>Beginner</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>0.5</td>
-            <td>Beginner</td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>0.5</td>
-            <td>Beginner</td>
-          </tr>
-          <tr>
-            <td>React</td>
-            <td>0.5</td>
-            <td>Beginner</td>
-          </tr>
-          <tr>
-            <td>Node.js</td>
-            <td>0.5</td>
-            <td>Beginner</td>
-          </tr>
-        </tbody>
-      </table><br>
-      <a href="files/cv.pdf" class="button" download>Download my CV</a><br><br>
+      <div class="text__box">
+        <h3>Languages</h3>
+        <table class="skill__table">
+          <tbody>
+            <tr>
+              <td><img src="img/css.svg"></td>
+              <td><img src="img/html.svg"></td>
+              <td><img src="img/javascript.svg"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="text__box">
+        <h3>Frameworks & Libraries</h3>
+        <table class="skill__table">
+          <tbody>
+            <tr>
+              <td><img src="img/react.svg"></td>
+              <td><img src="img/angular.svg"></td>
+              <td><img src="img/vue.svg"></td>
+              <td><img src="img/bootstrap.svg"></td>
+              <td><img src="img/jquery.svg"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="text__box">
+        <h3>Back-end</h3>
+        <table class="skill__table">
+          <tbody>
+            <tr>
+              <td><img src="img/node.svg"></td>
+              <td><img src="img/mongo.svg"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
   </section>
 
   <section id="work">
-    <h1 class="profile">Work</h1>
+    <h1 class="profile">Projects</h1>
     <div class="project-list">
       <div class="project-list__item">
         <img src="img/edgeofumbra.png" width=100%>
@@ -172,6 +173,16 @@
         </P>
         <a href="mailto:rjarkell1@gmail.com">Contact me</a>
       </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="text__box">
+      <p>My name is Rob Arkell. I live in Waterloo, Canada, have a Bachelor of Arts degree from Wilfrid Laurier
+        University, and am currently studying web development.
+        I have previous experience working in construction, operations management, manufacturing, and have also taught
+        English in South Korea.
+        In my free time I enjoy camping, gaming, travelling, history, and relaxing with my wife and dog.</p>
     </div>
   </section>
 
