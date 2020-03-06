@@ -10,89 +10,74 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
-  <header class="page-header">
-    <img src="img/logo.png" alt="logo" class="page-header__item">
-    <nav class="page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="#intro" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+  <nav id="menu" class="navbar navbar-expand-sm sticky-top" style=" background-color:#d3d3d3;">
+    <span class="navbar-brand" href="#intro">
+      <img src="img/logo.png" alt="logo" class="page-header__item">
+    </span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a href="#intro" class="nav-link">Home</a>
         </li>
-        <li role="presentation">
-          <a href="#skills" role="menuitem" class="navigation-list__item">Skills</a>
+        <li class="nav-item active"></li>
+        <a href="#skills" class="nav-link">Skills</a>
         </li>
-        <li role="presentation">
-          <a href="#work" role="menuitem" class="navigation-list__item">Projects</a>
+        <li class="nav-item active"></li>
+        <a href="#projects" class="nav-link">Projects</a>
         </li>
-        <li role="presentation">
-          <a href="#about" role="menuitem" class="navigation-list__item">About</a>
-        </li>
-        <li role="presentation">
-          <a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-        <li role="presentation">
-          <a href="files/cv.pdf" class="button" download>Download my CV</a>
+        <li class="nav-item active"></li>
+        <a href="#about" class="nav-link">About</a>
         </li>
       </ul>
-    </nav>
-  </header>
-
-  <section id="intro">
-    <div class="text__box">
-      <p>Front-end and back-end web developer.</p>
-      <a href="work.html" target="_blank">Check out some of my projects</a><br>
     </div>
-  </section>
-
-  <section id="skills">
-    <div>
-      <h1>Skills</h1>
-      <div class="text__box">
+  </nav>
+  <div class="container-fluid" id="intro">
+  </div>
+  <div class="container-fluid" id="skills">
+    <h1>Skills</h1>
+    <div class="row">
+      <div class="col-2">
+      </div>
+      <div class="col text__box">
+        <img class="p-3" src="img/html.svg">
+        <img class="p-3" src="img/css.svg">
+        <img class="p-3" src="img/javascript.svg"><br>
+        <img class="p-3" src="img/react.svg">
+        <img class="p-3" src="img/angular.svg">
+        <img class="p-3" src="img/vue.svg">
+        <img class="p-3" src="img/bootstrap.svg">
+        <img class="p-3" src="img/jquery.svg"><br>
+        <img class="p-3" src="img/node.svg">
+        <img class="p-3" src="img/mongo.svg">
+        <img class="p-3" src="img/firebase.svg">
+      </div>
+      <div class="col text__box">
         <h3>Languages</h3>
-        <table class="skill__table">
-          <tbody>
-            <tr>
-              <td><img src="img/css.svg"></td>
-              <td><img src="img/html.svg"></td>
-              <td><img src="img/javascript.svg"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="text__box">
+        <span>HTML * CSS * JavaScript</span><br><br>
         <h3>Frameworks & Libraries</h3>
-        <table class="skill__table">
-          <tbody>
-            <tr>
-              <td><img src="img/react.svg"></td>
-              <td><img src="img/angular.svg"></td>
-              <td><img src="img/vue.svg"></td>
-              <td><img src="img/bootstrap.svg"></td>
-              <td><img src="img/jquery.svg"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="text__box">
+        <span>React * Angular * Vue.js * Bootstrap * JQuery</span><br><br>
         <h3>Back-end</h3>
-        <table class="skill__table">
-          <tbody>
-            <tr>
-              <td><img src="img/node.svg"></td>
-              <td><img src="img/mongo.svg"></td>
-            </tr>
-          </tbody>
-        </table>
+        <span>Node.js * MongoDB * Firebase</span>
       </div>
-  </section>
-
-  <section id="work">
-    <h1 class="profile">Projects</h1>
-    <div class="project-list">
-      <div class="project-list__item">
-        <img src="img/edgeofumbra.png" width=100%>
+      <div class="col-2">
+      </div>
+    </div>
+    <a href="files/cv.pdf" class="button" download>Download my CV</a>
+  </div>
+  <div class="container-fluid" id="projects">
+    <h1>Projects</h1>
+    <div class="row">
+      <div class="col text__box">
+        <img class="border border-dark" src="img/edgeofumbra.png" width=100%>
         <h2>Edge of Umbra</h2>
         <p>
           Edge of Umbra is a website aimed at providing users with info on some of the best action, horror, and
@@ -103,23 +88,12 @@
           The front-end of the website was designed with React and the back-end was built with Node.js, Express, and
           MongoDB.
         </p>
-        <a href="https://edge-of-umbra.herokuapp.com/client/">View project</a>
-        <a href="https://github.com/RJArkell/edge-of-umbra">View code</a>
-        <a href="https://edge-of-umbra.herokuapp.com/documentation.html">View API</a>
+        <a href="https://edge-of-umbra.herokuapp.com/client/" class="button" target="_blank">View project</a>
+        <a href="https://github.com/RJArkell/edge-of-umbra" class="button" target="_blank">View code</a>
+        <a href="https://edge-of-umbra.herokuapp.com/documentation.html" class="button" target="_blank">View API</a>
       </div>
-      <div class="project-list__item">
-        <img src="img/pokedex.png" width=100%>
-        <h2>Pokedex App</h2>
-        <p>
-          An interactive Pokedex with modals displaying the stats of all of the original Kanto region Pokemon.<br>
-          <br>
-          This app was built with Javascript and JQuery and fetches data from an external API.
-        </p>
-        <a href="https://rjarkell.github.io/pokedex-app/">View project</a>
-        <a href="https://github.com/RJArkell/pokedex-app">View code</a>
-      </div>
-      <div class="project-list__item">
-        <img src="img/meetup.png" width=100%>
+      <div class="col text__box">
+        <img class="border border-dark" src="img/meetup.png" width=100%>
         <h2>Meetup App</h2>
         <p>
           A serverless progressive web app that uses the Meetup API to display which events are happening in your city,
@@ -129,11 +103,44 @@
           <br>
           This app was designed with React and uses AWS Lambda to access an external API.
         </p>
-        <a href="https://rjarkell.github.io/meetup/">View project</a>
-        <a href="https://github.com/RJArkell/meetup">View code</a>
+        <a href="https://rjarkell.github.io/meetup/" class="button" target="_blank">View project</a>
+        <a href="https://github.com/RJArkell/meetup" class="button" target="_blank">View code</a>
       </div>
-      <div class="project-list__item">
-        <img src="img/chat.png" width=100%>
+    </div>
+    <div class="row">
+      <div class="col text__box">
+        <img class="border border-dark" src="img/pokedex.png" width=100%>
+        <h2>Pokedex App</h2>
+        <p>
+          An interactive Pokedex with modals displaying the stats of all of the original Kanto region Pokemon.<br>
+          <br>
+          This app was built with Javascript and JQuery and fetches data from an external API.
+        </p>
+        <a href="https://rjarkell.github.io/pokedex-app/" class="button" target="_blank">View project</a>
+        <a href="https://github.com/RJArkell/pokedex-app" class="button" target="_blank">View code</a>
+      </div>
+      <div class="col text__box">
+        <h2>Your project here?</h2>
+        <p>
+          Looking for a front-end or back-end developer?
+        </P>
+        <a href="mailto:rjarkell1@gmail.com" class="button">Contact me</a>
+      </div>
+      <div class="col text__box">
+        <img class="border border-dark" src="img/quiz.png" width=100%>
+        <h2>Quiz App</h2>
+        <p>
+          A small quiz app with questions about French and math.<br>
+          <br>
+          Built with Angular.
+        </p>
+        <a href="https://rjarkell.github.io/quiz-app/" class="button" target="_blank">View project</a>
+        <a href="https://github.com/RJArkell/Quiz-App" class="button" target="_blank">View code</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text__box">
+        <img class="border border-dark" src="img/chat.png" width=100%>
         <h2>Chat App</h2>
         <p>
           A mobile chat app which provides users with the capability to send and receive messages and share their
@@ -141,53 +148,35 @@
           <br>
           The front-end for this app was built with React-Native and the database is hosted on Google Firebase.
         </p>
-        <a href="img/chat-app.webm">View preview</a>
-        <a href="https://github.com/RJArkell/chat-app">View code</a>
+        <a href="img/chat-app.webm" class="button" target="_blank">View preview</a>
+        <a href="https://github.com/RJArkell/chat-app" class="button" target="_blank">View code</a>
       </div>
-      <div class="project-list__item">
-        <img src="img/todo.png" width=100%>
+      <div class="col text__box">
+        <img class="border border-dark" src="img/todo.png" width=100%>
         <h2>Todo App</h2>
         <p>
           A simple todo app to help people keep track of their errands and appointments.<br>
           <br>
           Built with Vue.js.
         </p>
-        <a href="https://rjarkell.github.io/todo/">View project</a>
-        <a href="https://github.com/RJArkell/todo">View code</a>
-      </div>
-      <div class="project-list__item">
-        <img src="img/quiz.png" width=100%>
-        <h2>Quiz App</h2>
-        <p>
-          A small quiz app with questions about French and math.<br>
-          <br>
-          Built with Angular.
-        </p>
-        <a href="https://rjarkell.github.io/quiz-app/">View project</a>
-        <a href="https://github.com/RJArkell/Quiz-App">View code</a>
-      </div>
-      <div class="project-list__item">
-        <h2>Your project here?</h2>
-        <p>
-          Looking for a front-end or back-end developer?
-        </P>
-        <a href="mailto:rjarkell1@gmail.com">Contact me</a>
+        <a href="https://rjarkell.github.io/todo/" class="button" target="_blank">View project</a>
+        <a href="https://github.com/RJArkell/todo" class="button" target="_blank">View code</a>
       </div>
     </div>
-  </section>
-
-  <section id="about">
-    <div class="text__box">
-      <p>My name is Rob Arkell. I live in Waterloo, Canada, have a Bachelor of Arts degree from Wilfrid Laurier
+  </div>
+  <div class="container-fluid" id="about">
+    <div class="col-9">
+    </div>
+    <div class="col-3 offset-md-6 text__box">
+      <span>My name is Rob Arkell. I live in Waterloo, Canada, have a Bachelor of Arts degree from Wilfrid Laurier
         University, and am currently studying web development.
         I have previous experience working in construction, operations management, manufacturing, and have also taught
         English in South Korea.
-        In my free time I enjoy camping, gaming, travelling, history, and relaxing with my wife and dog.</p>
+        In my free time I enjoy camping, gaming, travelling, history, and relaxing with my wife and dog.</span>
     </div>
-  </section>
-
-  <footer id="contact">
-    <p>Find me on</p>
+  </div>
+  <div class="container-fluid" id="contact">
+    <h4>Find me on</h4>
     <div>
       <a href="https://www.github.com/RJArkell/" target="_blank"><img src="img/github.svg" class="social-media"
           alt="github"></a>
@@ -196,7 +185,7 @@
       <a href="https://www.linkedin.com/in/rob-arkell-378a2b1a3/" target="_blank"><img src="img/linkedin.svg"
           class="social-media" alt="linkedin"></a>
     </div>
-  </footer>
+  </div>
 </body>
 
 </html>
