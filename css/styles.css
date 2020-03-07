@@ -1,13 +1,7 @@
 :root {
-  --primary-color: #357b70;
-  --secondary-color: #e0b354;
   --dark-grey: rgb(125, 137, 150);
-  --link: #48689c;
-  --link-active: #489c79;
-  --link-visited: #945cab;
   --hfont-weight: 700;
-  --white: #fff;
-  --light-grey: #b9c5ca;
+  --light-grey: #d3d3d3;
   --light-blue: #ABC9E7;
 }
 
@@ -33,10 +27,12 @@ button {
   background-color: var(--light-blue);
   color: black;
   text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
+  border: 1px solid rgb(49, 47, 47);
 }
 
 button:hover,
@@ -46,12 +42,15 @@ button:focus,
   cursor: pointer;
   opacity: 0.8;
 }
+ .skillsbox{
+  width: 50%;
+ }
 
 .introText {
   padding-top: 35vh;
   display: block;
   font-size: 40px;
-  color:var(--light-grey);
+  color:white;
   text-decoration: underline var(--light-grey);
 }
 
@@ -59,21 +58,25 @@ button:focus,
   background-image: linear-gradient(rgba(141, 168, 175, 0.75), rgba(43, 129, 155, 0.85)),
   url('../img/skills2.jpg');
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   text-align: center;
   margin: 0 auto;
   border-bottom: 1px solid rgb(49, 47, 47);
 }
 
 #skills {
-  background-color:var(--light-grey);
+  background-image: linear-gradient(rgba(160, 141, 175, 0.75), rgba(147, 100, 185, 0.85)),
+  url('../img/city.jpg');
+  background-size: cover;
+  height: 91vh;
   margin: 0 auto;
   text-align: center;
   padding: 20px;
+  border-bottom: 1px solid rgb(49, 47, 47);
 }
 
 #about {
-  background: url('../img/intro.jpg');
+  background-image: url('../img/intro.jpg');
   background-size: cover;
   height: 90vh;
   text-align: center;
@@ -81,8 +84,16 @@ button:focus,
   border-bottom: 1px solid rgb(49, 47, 47);
 }
 
+.spacer {
+  background-color:#d3d3d3;
+  border-bottom: 1px solid rgb(49, 47, 47);
+}
+
 #projects {
-  background-color:var(--light-grey);
+  background:linear-gradient(rgba(95, 146, 121, 0.75), rgba(19, 75, 49, 0.85)),
+  url('../img/projects.jpg');
+  background-size: cover;
+  height: 91vh;
   margin: 0 auto;
   text-align: center;
   border-bottom: 1px solid rgb(49, 47, 47);
@@ -91,7 +102,7 @@ button:focus,
 
 .text__box {
   background-color:var(--dark-grey);
-  color: black;
+  color: white;
   border: 1px solid rgb(49, 47, 47);
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
