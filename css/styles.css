@@ -56,7 +56,7 @@ button:focus,
 
 #introdiv {
   background-image: linear-gradient(rgba(141, 168, 175, 0.75), rgba(43, 129, 155, 0.85)),
-  url('../img/skills2.jpg');
+  url('../img/intro.jpg');
   background-size: cover;
   height: 90vh;
   text-align: center;
@@ -66,7 +66,7 @@ button:focus,
 
 #skillsdiv {
   background-image: linear-gradient(rgba(160, 141, 175, 0.75), rgba(147, 100, 185, 0.85)),
-  url('../img/city.jpg');
+  url('../img/skills.jpg');
   background-size: cover;
   height: 91vh;
   margin: 0 auto;
@@ -76,7 +76,7 @@ button:focus,
 }
 
 #aboutdiv {
-  background-image: url('../img/intro.jpg');
+  background-image: url('../img/about.jpg');
   background-size: cover;
   height: 90vh;
   text-align: center;
