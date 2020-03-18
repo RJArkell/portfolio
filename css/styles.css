@@ -1,7 +1,7 @@
 :root {
   --dark-grey: rgb(125, 137, 150);
   --hfont-weight: 700;
-  --light-grey: #aaa8a8;
+  --light-grey: #b6a8a8;
   --light-blue: #ABC9E7;
 }
 
@@ -51,7 +51,7 @@ button:focus,
   display: block;
   font-size: 40px;
   color:white;
-  text-decoration: underline var(--light-grey);
+  text-decoration: underline white;
 }
 
 #introdiv {
