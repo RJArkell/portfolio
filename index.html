@@ -49,17 +49,16 @@
     </div>
   </div>
 
-  <div class="spacer">
-    <br><br><br>
-  </div>
+  <div class="spacer p-4"></div>
 
   <div class="container-fluid" id="skillsdiv">
     <h1 style="color:white">Skills</h1>
     <a class="anchor" id="skills"></a>
-    <div class="col-4 text__box">
+    <div class="col-lg-4 col-sm-8 text__box">
       <img class="p-3 skill_icon" src="img/html.svg">
       <img class="p-3 skill_icon" src="img/css.svg">
-      <img class="p-3 skill_icon" src="img/javascript.svg"><br>
+      <img class="p-3 skill_icon" src="img/javascript.svg">
+      <img class="p-3 skill_icon" src="img/sass.svg"><br>
       <img class="p-3 skill_icon" src="img/react.svg">
       <img class="p-3 skill_icon" src="img/angular.svg">
       <img class="p-3 skill_icon" src="img/vue.svg">
@@ -67,93 +66,147 @@
       <img class="p-3 skill_icon" src="img/jquery.svg"><br>
       <img class="p-3 skill_icon" src="img/node.svg">
       <img class="p-3 skill_icon" src="img/mongo.svg">
-      <img class="p-3 skill_icon" src="img/firebase.svg">
+      <img class="p-3 skill_icon" src="img/lambda.svg">
       <img class="p-3 skill_icon" src="img/postgresql.svg">
     </div><br>
-    <div class="col-4 text__box">
+    <div class="col-lg-4 col-sm-8 text__box">
       <h3>Languages</h3>
-      <p>HTML * CSS * JavaScript</p>
+      <p>HTML * CSS * JavaScript * Sass</p>
       <h3>Frameworks & Libraries</h3>
       <p>React * Angular * Vue.js * Bootstrap * JQuery</p>
       <h3>Backend</h3>
-      <p>Node.js * MongoDB * Firebase * PostgreSQL</p>
+      <p>Node.js * MongoDB * AWS Lambda * PostgreSQL</p>
     </div><br>
     <a href="files/cv.pdf" class="button" download>Download my CV</a>
   </div>
 
-  <div class="spacer">
-    <br><br><br>
-  </div>
+  <div class="spacer p-4"></div>
 
   <div class="container-fluid" id="projectsdiv">
     <h1 style="color:white">Projects</h1>
     <a class="anchor" id="projects"></a>
     <div class="row">
-      <div class="col text__box">
-        <img class="border border-dark" src="img/edgeofumbra.png" width=100%>
-        <h2>Edge of Umbra</h2>
-        <a href="https://edge-of-umbra.herokuapp.com/client/" class="button" target="_blank">View project</a>
-        <a href="https://github.com/RJArkell/edge-of-umbra" class="button" target="_blank">View code</a>
-        <a href="https://edge-of-umbra.herokuapp.com/documentation.html" class="button" target="_blank">View API</a>
+      <div class="col card mx-3 my-4 p-0 border-dark projectcard">
+        <img class="card-img" src="img/edgeofumbra.png" height=100%>
+        <div class="card-img-overlay d-flex">
+          <h2 style="color:white" class="card-title align-self-center mx-auto ">Edge of Umbra</h2>
+        </div>
+        <div class="projectdetails">
+          <div>
+            <h2>Edge of Umbra</h2><br>
+            <p>
+              Edge of Umbra is a website aimed at providing users with info on some of the best action, horror, and
+              science-fiction movies available.
+              Users can sign up for an account, customize their profile, and make a list of favorite movies to keep
+              track of
+              the movies they love and the ones they're interested in seeing.<br>
+              <br>
+              The front-end of the website was designed with React and the back-end was built with Node.js, Express, and
+              MongoDB.
+            </p>
+            <a href="https://edge-of-umbra.herokuapp.com/client/" class="button" target="_blank">View project</a>
+            <a href="https://github.com/RJArkell/edge-of-umbra" class="button" target="_blank">View code</a>
+            <a href="https://edge-of-umbra.herokuapp.com/documentation.html" class="button" target="_blank">View API</a>
+          </div>
+        </div>
       </div>
-      <div class="col text__box">
-        <h2>Your project here?</h2>
-        <p>
-          Looking for a frontend or backend developer for your next project? Contact me.
-        </P>
-        <a href="mailto:rjarkell1@gmail.com" class="button">rjarkell1@gmail.com</a>
+      <div class="col card mx-3 my-4 p-0 border-dark projectcard">
+        <img class="card-img" src="img/arccorp.png" height=100%>
+        <div class="card-img-overlay d-flex">
+          <h2 style="color:white" class="card-title align-self-center mx-auto ">Perses Fleet</h2>
+        </div>
+        <div class="projectdetails">
+          <div>
+            <h2>Perses Fleet</h2><br>
+            <p>A website for the Perses Fleet Star Citizen organization. Built with React Bootstrap and Sass.</p>
+            <a href="https://github.com/RJArkell/perses-fleet" class="button" target="_blank">View code</a>
+            <a class="button">Coming soon</a>
+          </div>
+        </div>
       </div>
-      <div class="col text__box">
-        <img class="border border-dark" src="img/arccorp.png" width=100%>
-        <h2>Perses Fleet Website</h2>
-        <p>Under construction</p>
-      </div>
-      <div class="col text__box">
-        <img class="border border-dark" src="img/meetup.png" width=100%>
-        <h2>Meetup App</h2>
-        <a href="https://rjarkell.github.io/meetup/" class="button" target="_blank">View project</a>
-        <a href="https://github.com/RJArkell/meetup" class="button" target="_blank">View code</a>
+      <div class="col card mx-3 my-4 p-0 border-dark projectcard">
+        <img class="card-img" src="img/meetup.png" height=100%>
+        <div class="card-img-overlay d-flex">
+          <h2 style="color:white" class="card-title align-self-center mx-auto ">Meetup App</h2>
+        </div>
+        <div class="projectdetails">
+          <div>
+            <h2>Meetup App</h2><br>
+            <p>A website for the Perses Fleet Star Citizen organization. Built with React Bootstrap and Sass.</p>
+            <a href="https://rjarkell.github.io/meetup/" class="button" target="_blank">View project</a>
+            <a href="https://github.com/RJArkell/meetup" class="button" target="_blank">View code</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row">
-      <div class="col text__box">
-        <img class="border border-dark" src="img/pokedex.png" width=100%>
-        <h2>Pokedex App</h2>
-        <a href="https://rjarkell.github.io/pokedex-app/" class="button" target="_blank">View project</a>
-        <a href="https://github.com/RJArkell/pokedex-app" class="button" target="_blank">View code</a>
+      <div class="col card mx-3 my-4 p-0 border-dark projectcard">
+        <img class="card-img" src="img/pokedex2.png" height=100%>
+        <div class="card-img-overlay d-flex">
+          <h2 style="color:white" class="card-title align-self-center mx-auto ">Pokedex App</h2>
+        </div>
+        <div class="projectdetails">
+          <div class="p-3">
+            <h2>Pokedex App</h2><br>
+            <p>
+              An interactive Pokedex with modals displaying the stats of all of the original Kanto region Pokemon.<br>
+              <br>
+              This app was built with Javascript and JQuery and fetches data from an external API.
+            </p>
+            <a href="https://rjarkell.github.io/pokedex-app/" class="button" target="_blank">View project</a>
+            <a href="https://github.com/RJArkell/pokedex-app" class="button" target="_blank">View code</a>
+          </div>
+        </div>
       </div>
-      <div class="col text__box">
-        <img class="border border-dark" src="img/quiz.png" width=100%>
-        <h2>Quiz App</h2>
-        <a href="https://rjarkell.github.io/quiz-app/" class="button" target="_blank">View project</a>
-        <a href="https://github.com/RJArkell/Quiz-App" class="button" target="_blank">View code</a>
+      <div class="col card mx-3 my-4 p-0 border-dark projectcard">
+        <img class="card-img" src="img/chat2.png" height=100%>
+        <div class="card-img-overlay d-flex">
+          <h2 style="color:white" class="card-title align-self-center mx-auto ">Chat App</h2>
+        </div>
+        <div class="projectdetails">
+          <div>
+            <h2>Chat App</h2><br>
+            <p>
+              A mobile chat app which provides users with the capability to send and receive messages and share their
+              current location as well as photos from their phone's camera or gallery.<br>
+              <br>
+              The front-end for this app was built with React-Native and the database is hosted on Google Firebase.
+            </p>
+            <a href="img/chat-app.webm" class="button" target="_blank">View preview</a>
+            <a href="https://github.com/RJArkell/chat-app" class="button" target="_blank">View code</a>
+          </div>
+        </div>
       </div>
-      <div class="col text__box">
-        <img class="border border-dark" src="img/chat.png" width=100%>
-        <h2>Chat App</h2>
-        <a href="img/chat-app.webm" class="button" target="_blank">View preview</a>
-        <a href="https://github.com/RJArkell/chat-app" class="button" target="_blank">View code</a>
-      </div>
-      <div class="col text__box">
-        <img class="border border-dark" src="img/todo.png" width=100%>
-        <h2>Todo App</h2>
-        <a href="https://rjarkell.github.io/todo/" class="button" target="_blank">View project</a>
-        <a href="https://github.com/RJArkell/todo" class="button" target="_blank">View code</a>
+      <div class="col card mx-3 my-4 p-0 border-dark projectcard">
+        <img class="card-img" src="img/todo2.png" height=100%>
+        <div class="card-img-overlay d-flex">
+          <h2 style="color:white" class="card-title align-self-center mx-auto ">Todo App</h2>
+        </div>
+        <div class="projectdetails">
+          <div>
+            <h2>Todo App</h2><br>
+            <p>
+              A simple todo app to help people keep track of their errands and appointments.<br>
+              <br>
+              Built with Vue.js.
+            </p>
+            <a href="https://rjarkell.github.io/todo/" class="button" target="_blank">View project</a>
+            <a href="https://github.com/RJArkell/todo" class="button" target="_blank">View code</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="spacer">
-    <br><br><br>
-  </div>
+  <div class="spacer p-4"></div>
 
   <div class="container-fluid" id="aboutdiv">
     <a class="anchor2" id="about"></a>
     <div class="text__box">
       <p>My name is Rob Arkell. I am a web developer living in Waterloo, Canada and have a Bachelor of Arts degree
-        from Wilfrid Laurier University.
+        from Wilfrid Laurier University.<br><br>
         I have previous experience working in construction, operations management, manufacturing, and have also
-        taught English in South Korea.
+        taught English in South Korea.<br><br>
         In my free time I enjoy camping, gaming, travelling, and studying history.</p>
     </div>
   </div>

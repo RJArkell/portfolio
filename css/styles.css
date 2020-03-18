@@ -90,7 +90,7 @@ button:focus,
 }
 
 #projectsdiv {
-  background:linear-gradient(rgba(95, 146, 121, 0.75), rgba(19, 75, 49, 0.85)),
+  background-image:linear-gradient(rgba(95, 146, 121, 0.75), rgba(19, 75, 49, 0.85)),
   url('../img/projects.jpg');
   background-size: cover;
   height: 91vh;
@@ -98,6 +98,32 @@ button:focus,
   text-align: center;
   border-bottom: 1px solid rgb(49, 47, 47);
   padding: 20px;
+}
+
+.projectdetails {
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #b4b0b0;
+}
+
+.projectcard {
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  width: 40%;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.144);
+}
+.projectcard:hover .projectdetails {
+  opacity: 1;
 }
 
 .text__box {
@@ -122,4 +148,32 @@ button:focus,
 
 #menu {
   border-bottom: 1px solid rgb(49, 47, 47);
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+  
+@media (max-width: 320px) {
+  .skill_icon {
+    height: 60px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .skill_icon {
+    height: 70px;
+  }
+}
+  
+@media (min-width: 720px) and (max-width: 1024px) {
+  .skill_icon {
+    height: 80px;
+  }
+}
+
+@media (min-width: 1024px){
+  .skill_icon {
+    height: 90px;
+  }
 }
