@@ -1,7 +1,7 @@
 :root {
   --dark-grey: rgb(125, 137, 150);
   --hfont-weight: 700;
-  --light-grey: #d3d3d3;
+  --light-grey: #aaa8a8;
   --light-blue: #ABC9E7;
 }
 
@@ -76,7 +76,7 @@ button:focus,
 }
 
 #aboutdiv {
-  background-image: url('../img/about.jpg');
+  background-image:url('../img/about.jpg');
   background-size: cover;
   height: 90vh;
   text-align: center;
@@ -85,7 +85,7 @@ button:focus,
 }
 
 .spacer {
-  background-color:#d3d3d3;
+  background-color:var(--light-grey);
   border-bottom: 1px solid rgb(49, 47, 47);
 }
 
@@ -100,6 +100,17 @@ button:focus,
   padding: 20px;
 }
 
+.aboutbox {
+  float: right;
+  background-color:var(--light-grey);
+  border: 1px solid rgb(49, 47, 47);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
+  margin: 25px;
+  padding: 10px;
+  width:40vw;
+}
+
 .projectdetails {
   border-radius: 3px;
   position: absolute;
@@ -111,7 +122,18 @@ button:focus,
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #b4b0b0;
+  background-color: var(--light-grey);
+}
+
+.tinted-image:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(10, 10, 10, 0.45),rgba(10, 10, 10, 0.45));
 }
 
 .projectcard {
@@ -122,13 +144,13 @@ button:focus,
   margin: 10px;
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.144);
 }
+
 .projectcard:hover .projectdetails {
   opacity: 1;
 }
 
-.text__box {
-  background-color:var(--dark-grey);
-  color: white;
+.textbox {
+  background-color:var(--light-grey);
   border: 1px solid rgb(49, 47, 47);
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
@@ -153,26 +175,15 @@ button:focus,
 @-ms-viewport {
   width: device-width;
 }
-  
-@media (max-width: 320px) {
+
+
+@media (max-width: 1080px) {
   .skill_icon {
     height: 60px;
   }
 }
-
-@media (min-width: 320px) and (max-width: 720px) {
-  .skill_icon {
-    height: 70px;
-  }
-}
   
-@media (min-width: 720px) and (max-width: 1024px) {
-  .skill_icon {
-    height: 80px;
-  }
-}
-
-@media (min-width: 1024px){
+@media (min-width: 1080px){
   .skill_icon {
     height: 90px;
   }
