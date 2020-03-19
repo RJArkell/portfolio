@@ -65,7 +65,7 @@ button:focus,
   background-image: linear-gradient(rgba(160, 141, 175, 0.75), rgba(147, 100, 185, 0.85)),
   url('../img/skills.jpg');
   background-size: cover;
-  height: 91vh;
+  min-height: 91vh;
   margin: 0 auto;
   text-align: center;
   padding: 20px;
@@ -75,7 +75,7 @@ button:focus,
 #aboutdiv {
   background-image:url('../img/about.jpg');
   background-size: cover;
-  height: 90vh;
+  min-height: 90vh;
   text-align: center;
   margin: 0 auto;
   border-bottom: 1px solid rgb(49, 47, 47);
