@@ -14,8 +14,8 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
-<body>
-  <nav id="menu" class="navbar navbar-expand-sm sticky-top" style=" background-color:#b6a8a8;">
+<body class="font-weight-bold">
+  <nav id="menu" class="navbar navbar-expand-sm sticky-top" style="background-color:#b6a8a8;">
     <span class="navbar-brand" href="#intro">
       <img src="img/logo.png" alt="logo" class="page-header__item">
     </span>
@@ -26,16 +26,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a href="#intro" class="nav-link">Home</a>
+          <a href="#intro" class="nav-link" style="color:black">Home</a>
         </li>
         <li class="nav-item active"></li>
-        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#skills" class="nav-link" style="color:black">Skills</a>
         </li>
         <li class="nav-item active"></li>
-        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#projects" class="nav-link" style="color:black">Projects</a>
         </li>
         <li class="nav-item active"></li>
-        <a href="#about" class="nav-link">About</a>
+        <a href="#about" class="nav-link" style="color:black">About</a>
         </li>
       </ul>
     </div>
@@ -54,7 +54,7 @@
   <div class="container-fluid" id="skillsdiv">
     <h1 style="color:white">Skills</h1>
     <a class="anchor" id="skills"></a>
-    <div class="col-lg-4 col-sm-8 textbox">
+    <div class="col-xl-4 col-md-6 col-sm-8 skillbox">
       <img class="p-2 skill_icon" src="img/html.svg">
       <img class="p-2 skill_icon" src="img/css.svg">
       <img class="p-2 skill_icon" src="img/javascript.svg">
@@ -71,7 +71,7 @@
       <img class="p-2 skill_icon" src="img/lambda.svg">
       <img class="p-2 skill_icon" src="img/postgresql.svg">
     </div><br>
-    <div class="col-lg-4 col-sm-8 textbox">
+    <div class="col-xl-4 col-md-6 col-sm-8 skillbox">
       <h3>Languages</h3>
       <p>HTML * CSS * JavaScript * Sass</p>
       <h3>Frameworks & Libraries</h3>
@@ -85,52 +85,54 @@
   <div class="spacer p-4"></div>
 
   <div class="container-fluid" id="projectsdiv">
-    <h1 style="color:white">Projects</h1>
+    <h1 style="color:white" class="mb-3">Projects</h1>
     <a class="anchor" id="projects"></a>
     <div class="row">
-      <div class="col card mx-3 my-4 p-0 border-dark projectcard tinted-image">
-        <img class="card-img " src="img/edgeofumbra.png" height=100%>
+      <div class="col-xl-4 col-md-6 my-2 card p-0 border-dark projectcard tinted-image">
+        <img class="card-img " src="img/edgeofumbra.png">
         <div class="card-img-overlay d-flex">
           <h2 style="color:white" class="card-title align-self-center mx-auto ">Edge of Umbra</h2>
         </div>
         <div class="projectdetails">
           <div class="p-3">
-            <h2>Edge of Umbra</h2><br>
-            <p>Edge of Umbra is an SPA that showcases action, horror, and science-fiction movies. Users can sign up for
-              an account, customize their profile, and make a list of favorite movies.<br><br>
-              The front-end of the website was designed with React Bootstrap and the back-end was built with Node.js,
-              Express, andMongoDB.</p>
+            <h5>Edge of Umbra</h5><br>
+            <p>Edge of Umbra is an SPA that showcases action, horror, and science-fiction movies. Users can sign up
+              for
+              an account, view info on listed movies, and make a list of favorite movies.</p>
+            <p>The front-end of the website was designed with React Bootstrap and the back-end was built with
+              Node.js, Express, and MongoDB.</p>
             <a href="https://edge-of-umbra.herokuapp.com/client/" class="button" target="_blank">View project</a>
             <a href="https://github.com/RJArkell/edge-of-umbra" class="button" target="_blank">View code</a>
-            <a href="https://edge-of-umbra.herokuapp.com/documentation.html" class="button" target="_blank">View API</a>
+            <a href="https://edge-of-umbra.herokuapp.com/documentation.html" class="button" target="_blank">View
+              API</a>
           </div>
         </div>
       </div>
-      <div class="col card mx-3 my-4 p-0 border-dark projectcard tinted-image">
-        <img class="card-img" src="img/arccorp.png" height=100%>
+      <div class="col-xl-4 col-md-6 my-2 card p-0 border-dark projectcard tinted-image">
+        <img class="card-img" src="img/arccorp.png">
         <div class="card-img-overlay d-flex">
           <h2 style="color:white" class="card-title align-self-center mx-auto ">Perses Fleet</h2>
         </div>
         <div class="projectdetails">
           <div class="p-3">
-            <h2>Perses Fleet</h2><br>
-            <p>A website for the Perses Fleet Star Citizen organization. Built with React Bootstrap and Sass.<br><br>
+            <h5>Perses Fleet</h5><br>
+            <p>A website for the Star Citizen organization Perses Fleet. Built with React Bootstrap and Sass.<br><br>
               Currently under construction</p>
-            <a href="https://github.com/RJArkell/perses-fleet" class="button" target="_blank">View code</a>
             <a class="button">Coming soon</a>
+            <a href="https://github.com/RJArkell/perses-fleet" class="button" target="_blank">View code</a>
           </div>
         </div>
       </div>
-      <div class="col card mx-3 my-4 p-0 border-dark projectcard tinted-image">
-        <img class="card-img" src="img/meetup.png" height=100%>
+      <div class="col-xl-4 col-md-6 my-2 card p-0 border-dark projectcard tinted-image">
+        <img class="card-img" src="img/meetup.png">
         <div class="card-img-overlay d-flex">
           <h2 style="color:white" class="card-title align-self-center mx-auto ">Meetup App</h2>
         </div>
         <div class="projectdetails">
           <div class="p-3">
-            <h2>Meetup App</h2><br>
-            <p>A serverless progressive web app that uses the Meetup API to display which events are happening in your
-              city, or any city you search for.
+            <h5>Meetup App</h5><br>
+            <p>A serverless progressive web app that uses the Meetup API to display which events are happening in any
+              city you search for.
               Includes graphs to show the amount of upcoming events and RSVPs per event.<br><br>
               This app was designed with React and uses AWS Lambda to access an external API.</p>
             <a href="https://rjarkell.github.io/meetup/" class="button" target="_blank">View project</a>
@@ -138,16 +140,14 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col card mx-3 my-4 p-0 border-dark projectcard tinted-image">
-        <img class="card-img" src="img/pokedex.png" height=100%>
+      <div class="col-xl-4 col-md-6 my-2 card p-0 border-dark projectcard tinted-image">
+        <img class="card-img" src="img/pokedex.png">
         <div class="card-img-overlay d-flex">
           <h2 style="color:white" class="card-title align-self-center mx-auto ">Pokedex App</h2>
         </div>
         <div class="projectdetails">
           <div class="p-3">
-            <h2>Pokedex App</h2><br>
+            <h5>Pokedex App</h5><br>
             <p>An interactive Pokedex with modals displaying the stats of all of the original Kanto
               region Pokemon.<br><br>
               This app was built with Javascript, Bootstrap, and JQuery and fetches data from an external API.</p>
@@ -156,14 +156,14 @@
           </div>
         </div>
       </div>
-      <div class="col card mx-3 my-4 p-0 border-dark projectcard tinted-image">
-        <img class="card-img" src="img/chat.png" height=100%>
+      <div class="col-xl-4 col-md-6 my-2 card p-0 border-dark projectcard tinted-image">
+        <img class="card-img" src="img/chat.png">
         <div class="card-img-overlay d-flex">
-          <h2 style="color:white" class="card-title align-self-center mx-auto ">Chat App</h2>
+          <h2 style="color:white" class="card-title align-self-center mx-auto">Chat App</h2>
         </div>
         <div class="projectdetails">
           <div class="p-3">
-            <h2>Chat App</h2><br>
+            <h5>Chat App</h5><br>
             <p>A mobile chat app which provides users with the capability to send and receive messages and share their
               current location as well as photos from their phone's camera or gallery.<br><br>
               The front-end for this app was built with React-Native and the database is hosted on Google Firebase.</p>
@@ -172,14 +172,14 @@
           </div>
         </div>
       </div>
-      <div class="col card mx-3 my-4 p-0 border-dark projectcard tinted-image">
-        <img class="card-img" src="img/todo.png" height=100%>
+      <div class="col-xl-4 col-md-6 my-2 card p-0 border-dark projectcard tinted-image">
+        <img class="card-img" src="img/todo.png">
         <div class="card-img-overlay d-flex">
           <h2 style="color:white" class="card-title align-self-center mx-auto ">Todo App</h2>
         </div>
         <div class="projectdetails">
           <div class="p-3">
-            <h2>Todo App</h2><br>
+            <h5>Todo App</h5><br>
             <p>A simple todo app to help people keep track of their errands and appointments.<br><br>
               Built with Vue.js.</p>
             <a href="https://rjarkell.github.io/todo/" class="button" target="_blank">View project</a>
@@ -195,11 +195,11 @@
   <div class="container-fluid" id="aboutdiv">
     <a class="anchor2" id="about"></a>
     <div class="aboutbox m-5">
-      <p>My name is Rob Arkell. I am a web developer living in Waterloo, Canada and have a Bachelor of Arts degree
+      <p>My name is Rob Arkell. I am a web developer, I live in Waterloo, Canada, and I have a Bachelor of Arts degree
         from Wilfrid Laurier University.</p>
       <p>I have previous experience working in civil engineering, manufacturing, operations management, and have also
         taught English in South Korea.</p>
-      <p> In my free time I enjoy camping, gaming, travelling, and studying history.</p>
+      <p>In my free time I enjoy camping, gaming, travelling, and studying history.</p>
     </div>
   </div>
 
