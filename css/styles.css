@@ -42,9 +42,6 @@ button:focus,
   cursor: pointer;
   opacity: 0.8;
 }
- .skillsbox{
-  width: 50%;
- }
 
 .introText {
   padding-top: 35vh;
@@ -93,7 +90,7 @@ button:focus,
   background-image:linear-gradient(rgba(95, 146, 121, 0.75), rgba(19, 75, 49, 0.85)),
   url('../img/projects.jpg');
   background-size: cover;
-  height: 91vh;
+  min-height: 91vh;
   margin: 0 auto;
   text-align: center;
   border-bottom: 1px solid rgb(49, 47, 47);
@@ -163,8 +160,8 @@ button:focus,
 
 h5{
   text-decoration: underline;
-  font-weight: bold;
 }
+
 .skill_icon {
   height: 90px;
 }
@@ -181,17 +178,11 @@ h5{
   .skill_icon {
     height: 60px;
   }
-  .projectcard {
-    font-size: 75%;
-  }
 }
 
 @media (min-width: 800px) and (max-width: 1450px) {
   .skill_icon {
     height: 70px;
-  }
-  .projectcard {
-    font-size: 75%;
   }
 }
   
@@ -199,4 +190,10 @@ h5{
   .skill_icon {
     height: 90px;
   }
+}
+
+@media (max-width: 1750px){
+.projectcard {
+  font-size: 75%;
+}
 }
