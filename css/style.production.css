@@ -23,15 +23,13 @@ a.anchor2 {
 
 .button,
 button {
-  border: none;
   display: inline-block;
   font-family: inherit;
   background-color: var(--light-blue);
   color: black;
-  text-decoration: none;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
-  padding: 10px;
+  padding: 5px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
