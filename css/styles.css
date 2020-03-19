@@ -193,7 +193,7 @@ h5{
 }
 
 @media (max-width: 1750px){
-.projectcard {
-  font-size: 75%;
-}
+  .projectcard {
+   font-size: 75%;
+  }
 }
