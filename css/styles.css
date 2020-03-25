@@ -53,7 +53,8 @@ button:focus,
   background-image: linear-gradient(rgba(141, 168, 175, 0.75), rgba(43, 129, 155, 0.85)),
   url('../img/intro.jpg');
   background-size: cover;
-  height: 90vh;
+  background-position: center bottom;
+  min-height: 90vh;
   text-align: center;
   margin: 0 auto;
   border-bottom: 1px solid rgb(49, 47, 47);
@@ -63,6 +64,7 @@ button:focus,
   background-image: linear-gradient(rgba(160, 141, 175, 0.75), rgba(147, 100, 185, 0.85)),
   url('../img/skills.jpg');
   background-size: cover;
+  background-position: center bottom;
   min-height: 91vh;
   margin: 0 auto;
   text-align: center;
