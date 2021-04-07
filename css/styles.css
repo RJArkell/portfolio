@@ -1,22 +1,32 @@
 :root {
   --dark-grey: rgb(125, 137, 150);
   --hfont-weight: 700;
-  --light-grey: #b6a8a8;
+  --light-grey: #e6d6d6;
   --light-blue: #ABC9E7;
+}
+
+#menu a {
+  color: var(--light-grey);
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: var(--light-blue);
 }
 
 a.anchor {
   display: block;
   position: relative;
-  top: -170px;
+  top: -10vw;
   visibility: hidden;
 }
 
-a.anchor2 {
-  display: block;
-  position: relative;
-  top: -95px;
-  visibility: hidden;
+* {
+  color: var(--light-grey)
+}
+
+body {
+  background: linear-gradient(to left, rgb(101, 139, 150), rgb(76, 105, 114) 20% 80%, rgb(101, 139, 150));
 }
 
 .button,
@@ -42,70 +52,40 @@ button:focus,
 }
 
 .introText {
-  padding-top: 35vh;
+  padding-top: 15vw;
   display: block;
   font-size: 40px;
-  color:white;
-  text-decoration: underline white;
 }
 
 #introdiv {
-  background-image: linear-gradient(rgba(141, 168, 175, 0.75), rgba(43, 129, 155, 0.85)),
-  url('../img/intro.jpg');
-  background-size: cover;
-  background-position: center bottom;
-  min-height: 90vh;
+  height: 45vw;
   text-align: center;
   margin: 0 auto;
-  border-bottom: 1px solid rgb(49, 47, 47);
-}
-
-#skillsdiv {
-  background-image: linear-gradient(rgba(160, 141, 175, 0.75), rgba(147, 100, 185, 0.85)),
-  url('../img/skills.jpg');
-  background-size: cover;
-  background-position: center bottom;
-  min-height: 91vh;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-  border-bottom: 1px solid rgb(49, 47, 47);
+  padding: 0 10%;
+  margin-bottom: 10%;
 }
 
 #aboutdiv {
-  background-image:url('../img/about.jpg');
-  background-size: cover;
-  min-height: 90vh;
+  min-height: 45vw;
   text-align: center;
   margin: 0 auto;
-  border-bottom: 1px solid rgb(49, 47, 47);
-}
-
-.spacer {
-  background-color:var(--light-grey);
-  border-bottom: 1px solid rgb(49, 47, 47);
+  padding: 0 10%;
+  margin-bottom: 10%;
 }
 
 #projectsdiv {
-  background-image:linear-gradient(rgba(95, 146, 121, 0.75), rgba(19, 75, 49, 0.85)),
-  url('../img/projects.jpg');
-  background-size: cover;
-  min-height: 91vh;
+  min-height: 45vw;
   margin: 0 auto;
   text-align: center;
-  border-bottom: 1px solid rgb(49, 47, 47);
-  padding: 20px;
+  padding: 0 10%;
+  margin-bottom: 10%;
 }
 
-.aboutbox {
-  float: right;
-  background-color:var(--light-grey);
-  border: 1px solid rgb(49, 47, 47);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
-  margin: 25px;
-  padding: 10px;
-  width:40vw;
+#contactdiv {
+  min-height: 42vw;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 10%;
 }
 
 .projectdetails {
@@ -167,7 +147,8 @@ h5{
 }
 
 #menu {
-  border-bottom: 1px solid rgb(49, 47, 47);
+  background: rgb(76, 105, 114);
+  padding: 0 10%;
 }
 
 @-ms-viewport {

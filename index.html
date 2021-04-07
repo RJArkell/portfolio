@@ -9,13 +9,16 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
 </head>
 
 <body class="font-weight-bold">
-  <nav id="menu" class="navbar navbar-expand-sm sticky-top" style="background-color:#b6a8a8;">
+  <nav id="menu" class="navbar navbar-expand-sm sticky-top">
     <span class="navbar-brand" href="#intro">
       <img src="img/logo.png" alt="logo" class="page-header__item">
     </span>
@@ -26,16 +29,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a href="#intro" class="nav-link" style="color:black">Home</a>
+          <a href="#intro" class="nav-link">Home</a>
         </li>
-        <li class="nav-item active"></li>
-        <a href="#skills" class="nav-link" style="color:black">Skills</a>
+        <li class="nav-item active">
+          <a href="#projects" class="nav-link">Projects</a>
         </li>
-        <li class="nav-item active"></li>
-        <a href="#projects" class="nav-link" style="color:black">Projects</a>
+        <li class="nav-item active">
+          <a href="#about" class="nav-link">About</a>
         </li>
-        <li class="nav-item active"></li>
-        <a href="#about" class="nav-link" style="color:black">About</a>
+        <li class="nav-item active">
+          <a href="#contact" class="nav-link">Contact</a>
         </li>
       </ul>
     </div>
@@ -49,149 +52,59 @@
     </div>
   </div>
 
-  <div class="container-fluid" id="skillsdiv">
-    <h1 style="color:white">Skills</h1>
-    <a class="anchor" id="skills"></a>
-    <div class="col-xl-4 col-md-6 col-sm-8 skillbox">
-      <img class="p-2 skill_icon" src="img/html.svg">
-      <img class="p-2 skill_icon" src="img/css.svg">
-      <img class="p-2 skill_icon" src="img/javascript.svg">
-      <img class="p-2 skill_icon" src="img/sass.svg">
-      <br><br>
-      <img class="p-2 skill_icon" src="img/react.svg">
-      <img class="p-2 skill_icon" src="img/angular.svg">
-      <img class="p-2 skill_icon" src="img/vue.svg">
-      <img class="p-2 skill_icon" src="img/bootstrap.svg">
-      <img class="p-2 skill_icon" src="img/jquery.svg">
-      <br><br>
-      <img class="p-2 skill_icon" src="img/node.svg">
-      <img class="p-2 skill_icon" src="img/mongo.svg">
-      <img class="p-2 skill_icon" src="img/lambda.svg">
-      <img class="p-2 skill_icon" src="img/postgresql.svg">
-    </div><br>
-    <div class="col-xl-4 col-md-6 col-sm-8 skillbox">
-      <h3>Languages</h3>
-      <p>HTML * CSS * JavaScript * Sass</p>
-      <h3>Frameworks & Libraries</h3>
-      <p>React * Angular * Vue.js * Bootstrap * JQuery</p>
-      <h3>Backend</h3>
-      <p>Node.js * MongoDB * AWS Lambda * PostgreSQL</p>
-    </div><br>
-    <!--<a href="files/cv.pdf" class="button" download>Download my CV</a>-->
-  </div>
-
   <div class="container-fluid" id="projectsdiv">
-    <h1 style="color:white" class="mb-3">Projects</h1>
+    <h1 class="mb-3">Projects</h1>
     <a class="anchor" id="projects"></a>
     <div class="row">
-      <div class="col-xl-4 col-md-6 my-2 card p-0 border-dark projectcard tinted-image">
-        <img class="card-img " src="img/edgeofumbra.png">
-        <div class="card-img-overlay d-flex">
-          <h2 style="color:white" class="card-title align-self-center mx-auto ">Edge of Umbra</h2>
-        </div>
-        <div class="projectdetails">
-          <div class="p-3">
-            <h5>Edge of Umbra</h5><br>
-            <p>Edge of Umbra is an SPA that showcases action, horror, and science-fiction movies. Users can sign up
-              for an account, view info on listed movies, and make a list of favorite movies. Login: Admin PW: password
-            </p>
-            <p>The frontend of the website was designed with React Bootstrap and the backend was built with
-              Node.js, Express, and MongoDB.</p>
-            <a href="https://edge-of-umbra.herokuapp.com/client/" class="button" target="_blank">View project</a>
-            <a href="https://github.com/RJArkell/edge-of-umbra" class="button" target="_blank">View code</a>
-            <a href="https://edge-of-umbra.herokuapp.com/documentation.html" class="button" target="_blank">View
-              API</a>
-          </div>
-        </div>
+      <div class="col">
+        <h2>Youth Unlimited Toronto</h2>
       </div>
-      <div class="col-xl-4 col-md-6 my-2 card p-0 border-dark projectcard tinted-image">
-        <img class="card-img" src="img/perses.png">
-        <div class="card-img-overlay d-flex">
-          <h2 style="color:white" class="card-title align-self-center mx-auto ">Perses Fleet</h2>
-        </div>
-        <div class="projectdetails">
-          <div class="p-3">
-            <h5>Perses Fleet</h5><br>
-            <p>A website for the Star Citizen organization Perses Fleet. Providing game and organziation news updates,
-              a list of current members, and current group objectives</p>
-            <p>The frontend was built with React Bootstrap and Sass and the backend is being built with Node.js and
-              Express.</p>
-            <a href="http://www.csg-perses.com" class="button" target="_blank">View Project</a>
-            <a href="https://github.com/RJArkell/perses-fleet" class="button" target="_blank">View code</a>
+      <div class="col">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
           </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-md-6 my-2 card p-0 border-dark projectcard tinted-image">
-        <img class="card-img" src="img/meetup.png">
-        <div class="card-img-overlay d-flex">
-          <h2 style="color:white" class="card-title align-self-center mx-auto ">Meetup App</h2>
-        </div>
-        <div class="projectdetails">
-          <div class="p-3">
-            <h5>Meetup App</h5><br>
-            <p>A serverless progressive web app that uses the Meetup API to display which events are happening in any
-              city you search for.
-              Includes graphs to show the amount of upcoming events and RSVPs per event.<br><br>
-              This app was designed with React and uses AWS Lambda to access an external API.</p>
-            <a href="https://rjarkell.github.io/meetup/" class="button" target="_blank">View project</a>
-            <a href="https://github.com/RJArkell/meetup" class="button" target="_blank">View code</a>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/yugta1.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/yugta2.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/yugta3.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/yugta4.png" alt="Third slide">
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-md-6 my-2 card p-0 border-dark projectcard tinted-image">
-        <img class="card-img" src="img/pokedex.png">
-        <div class="card-img-overlay d-flex">
-          <h2 style="color:white" class="card-title align-self-center mx-auto ">Pokedex App</h2>
-        </div>
-        <div class="projectdetails">
-          <div class="p-3">
-            <h5>Pokedex App</h5><br>
-            <p>An interactive Pokedex with modals displaying the stats of all of the original Kanto
-              region Pokemon.<br><br>
-              This app was built with Javascript, Bootstrap, and JQuery and fetches data from an external API.</p>
-            <a href="https://rjarkell.github.io/pokedex-app/" class="button" target="_blank">View project</a>
-            <a href="https://github.com/RJArkell/pokedex-app" class="button" target="_blank">View code</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-md-6 my-2 card p-0 border-dark projectcard tinted-image">
-        <img class="card-img" src="img/chat.png">
-        <div class="card-img-overlay d-flex">
-          <h2 style="color:white" class="card-title align-self-center mx-auto">Chat App</h2>
-        </div>
-        <div class="projectdetails">
-          <div class="p-3">
-            <h5>Chat App</h5><br>
-            <p>A mobile chat app which provides users with the capability to send and receive messages and share their
-              current location as well as photos from their phone's camera or gallery.<br><br>
-              The front-end for this app was built with React-Native and the database is hosted on Google Firebase.</p>
-            <a href="img/chat-app.webm" class="button" target="_blank">View preview</a>
-            <a href="https://github.com/RJArkell/chat-app" class="button" target="_blank">View code</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-md-6 my-2 card p-0 border-dark projectcard tinted-image">
-        <img class="card-img" src="img/todo.png">
-        <div class="card-img-overlay d-flex">
-          <h2 style="color:white" class="card-title align-self-center mx-auto ">Todo App</h2>
-        </div>
-        <div class="projectdetails">
-          <div class="p-3">
-            <h5>Todo App</h5><br>
-            <p>A simple to do app to help people keep track of their errands and appointments.<br><br>
-              Built with Vue.js.</p>
-            <a href="https://rjarkell.github.io/todo/" class="button" target="_blank">View project</a>
-            <a href="https://github.com/RJArkell/todo" class="button" target="_blank">View code</a>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>
   </div>
 
   <div class="container-fluid" id="aboutdiv">
-    <a class="anchor2" id="about"></a>
+    <h1 class="mb-3">About</h1>
+    <a class="anchor" id="about"></a>
     <div class="aboutbox m-5">
-      <p>My name is Rob Arkell. I am a full stack web developer, I live in Waterloo, Canada, and I have a Bachelor of
+      <p>My name is Rob Arkell. I am a full stack web developer based in Waterloo, Canada, and I have a Bachelor of
         Arts degree from Wilfrid Laurier University.</p>
       <p>I have previous experience working in civil engineering, manufacturing, operations management, and have also
         taught English in South Korea. In my free time I also enjoy camping, gaming, travelling, and studying history.
@@ -201,6 +114,11 @@
     </div>
   </div>
 
+  <div class="container-fluid" id="contactdiv">
+    <h1 class="mb-3">Contact</h1>
+    <a class="anchor" id="contact"></a>
+  </div>
+
   <nav class="navbar fixed-bottom mr-auto">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
@@ -208,8 +126,7 @@
             alt="github"></a>
       </li>
       <li class="nav-item active"></li>
-      <a href="mailto:rjarkell1@gmail.com" target="_blank"><img src="img/gmail.svg" class="social-media"
-          alt="twitter"></a>
+      <a href="mailto:info@arnketel.ca" target="_blank"><img src="img/gmail.svg" class="social-media" alt="twitter"></a>
       </li>
       <li class="nav-item active"></li>
       <a href="https://www.linkedin.com/in/rob-arkell-378a2b1a3/" target="_blank"><img src="img/linkedin.svg"
