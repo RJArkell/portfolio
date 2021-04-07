@@ -5,13 +5,14 @@
   --light-blue: #ABC9E7;
 }
 
-#menu a {
-  color: var(--light-grey);
-  text-decoration: none;
+a {
+  color: var(--light-grey) !important;
+  text-decoration: none !important; 
 }
 
-#menu a:hover {
-  color: var(--light-blue);
+a:hover {
+  color: var(--light-blue) !important;
+  text-decoration: underline !important;
 }
 
 a.anchor {
@@ -76,7 +77,6 @@ button:focus,
 #projectsdiv {
   min-height: 45vw;
   margin: 0 auto;
-  text-align: center;
   padding: 0 10%;
   margin-bottom: 10%;
 }
