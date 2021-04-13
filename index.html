@@ -17,17 +17,17 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body class="font-weight-bold">
+<body>
   <nav id="menu" class="navbar navbar-expand-sm sticky-top">
     <span class="navbar-brand" href="#intro">
-      <img src="img/logo.png" alt="logo" class="page-header__item">
+      <img src="img/logo1.png" alt="logo" class="logo">
     </span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
+    <div class="collapse navbar-collapse me-2" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item active">
           <a href="#intro" class="nav-link">Home</a>
         </li>
@@ -47,211 +47,119 @@
   <div class="container-fluid" id="introdiv">
     <a class="anchor" id="intro"></a>
     <div>
-      <p class="introText">FULL STACK WEB DEVELOPMENT</p>
-      <a href="#projects" class="button p-2">View some of my work</a>
+      <h1 class="introText">FULL STACK WEB DEVELOPMENT</h1>
+      <u><a href="#projects" class="p-2">View some of my work</a></u>
     </div>
   </div>
 
-  <div class="container-fluid mb-5" id="projectsdiv">
-    <h1 class="mb-5 text-center">Projects</h1>
-    <a class="anchor" id="projects"></a>
-    <div class="row mb-5">
-      <div class="col">
-        <h2 class="mb-4"><a href="https://www.yugta.ca">Youth Unlimited Toronto</a></h2>
-        <p>Designed by <u><a href="https://www.renga.co/">Renga</a></u></p>
-        <p><u><a href="https://www.yugta.ca" class="">Youth Unlimited Toronto</a></u> was designed by Renga for the
+  <a class="anchor" id="projects"></a>
+  <div class="container-fluid txt" id="projectsdiv">
+    <h1 class="p-5 text-center">Projects</h1>
+    <div class="row mt-5">
+      <div class="col align-middle">
+        <h2 class="mb-4 text-center"><a href="https://www.yugta.ca">Youth Unlimited Toronto</a></h2>
+        <p><u><a href="https://www.yugta.ca" class="">Youth Unlimited Toronto</a></u> was designed by <u><a
+              href="https://www.renga.co/">Renga</a></u> for the
           Toronto based, youth charity organization Youth Unlimited Toronto. To meet their needs, the client required a
           Content Managment System that allowed them full control over the content and layout of their site while still
-          being user friendly.</p>
-        <p>The flat file CMS <u><a href="https://getkirby.com/">Kirby</a></u> was used to achieve this, removing the
+          being user friendly. The flat file CMS Kirby was used to achieve this, removing the
           need for a seperate database or
           file server while providing an easy to navigate panel for admins to control the site with. Each section of
           each page of this dynamic site was developed as an interchangable block that could be reused and have it's
           content altered to be fit into any new or existing page. This gives admins the ability to easily update the
-          site past it's initial development.</p>
-        <p>The website contains databases for news, events, job listings, staff, and teams as well as pages to
+          site past it's initial development. The website contains databases for news, events, job listings, staff, and
+          teams as well as pages to
           automatically display and filter the entries to end users.</p>
-        <p>Tech stack: HTML / CSS / JS / PHP / <u><a href="https://getkirby.com/">Kirby</a></u></p>
+        <p>Tech stack: HTML / CSS / JS / PHP / Kirby</p>
       </div>
-      <div class="col">
-        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true"
-              aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          </div>
-          <div class="carousel-inner rounded">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/yugta1.png" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/yugta2.png" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/yugta3.png" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/yugta4.png" alt="Fourth slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/yugta5.png" alt="Fifth slide">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+      <div class="col mb-5">
+        <a href="https://www.yugta.ca"><img class="projectimg rounded" src="img/yugta.png"></a>
       </div>
     </div>
 
-    <div class="row mb-5">
-      <div class="col">
-        <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true"
-              aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carousel2" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          </div>
-          <div class="carousel-inner rounded">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/perses1.png" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/perses2.png" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/perses3.png" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/perses4.png" alt="Fourth slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/perses5.png" alt="Fifth slide">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+    <div class="row mt-5">
+      <div class="col mb-5">
+        <a href="https://www.thepossiblenow.com/" class="">
+          <img class="projectimg rounded" src="img/tpn.png">
+        </a>
       </div>
       <div class="col">
-        <h2 class="mb-4"><a href="https://www.csg-perses.com">Perses Fleet</a></h2>
-        <p>Designed in-house</p>
-        <p><u><a href="https://www.csg-perses.com">Perses Fleet</a></u> was designed in-house for the <u><a
-              href="https://robertsspaceindustries.com/star-citizen">Star Citizen</a></u> gaming organization Perses
-          Fleet</p>
-        <p>Tech stack: React Bootstrap / SASS / MongoDB / Node.js / Express
-      </div>
-    </div>
-
-    <div class="row mb-5">
-      <div class="col">
-        <h2 class="mb-4"><a href="https://www.thepossiblenow.com">The Possible Now</h2></a>
-        <p>Designed by <u><a href="https://www.renga.co/">Renga</a></u></p>
-        <p><u><a href="https://www.thepossiblenow.com/" class="">The Possible Now</a></u> was designed by Renga to serve
-          as a foundation to
+        <h2 class="mb-4 text-center"><a href="https://www.thepossiblenow.com">The Possible Now</a></h2>
+        <p><u><a href="https://www.thepossiblenow.com/" class="">The Possible Now</a></u> was designed by <u><a
+              href="https://www.renga.co/">Renga</a></u> to serve as a foundation to
           launch their new podcast series from, featuring interviews with people on topics relating to environmental
           sustainability issues. Keeping in line with the principle of sustainability, this static site was developed
-          to
-          use as little
-          energy as possible to reduce it's carbon footprint.</p>
-        <p>To acheive this goal numerous things were taken into account to reduce the energy usage of the site,
+          to use as little energy as possible to reduce it's carbon footprint. To acheive this goal numerous things were
+          taken into account to reduce the energy usage of the site,
           including: using only a few, reduced colour images, developing only in HTML and CSS with no libraries,
           implementing a dark mode feature, and using as little Javascript as possible
-          (one
-          function to store the dark mode state).</p>
-
-        <p>With these methods, along with the website being hosted with an
+          (one function to store the dark mode state). With these methods, along with the website being hosted with an
           eco-friendly provider, and using <u><a href="https://www.websitecarbon.com/">Website Carbon
               Calculator</a></u> as a gauge, the site emits less carbon than 90% of other sites on the internet.</p>
         <p>Tech stack: HTML / CSS / JS</p>
       </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col">
+        <h2 class="mb-4 text-center"><a href="https://www.csg-perses.com">Perses Fleet</a></h2>
+        <p><u><a href="https://www.csg-perses.com">Perses Fleet</a></u> was designed
+          in-house
+          for
+          the <u><a href="https://robertsspaceindustries.com/star-citizen">Star Citizen</a></u> gaming organization
+          Perses
+          Fleet</p>
+        <p>Tech stack: React Bootstrap / SASS / JS / MongoDB / Node.js / Express</p>
+      </div>
       <div class="col mb-5">
-        <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active" aria-current="true"
-              aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carousel3" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          </div>
-          <div class="carousel-inner rounded">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/tpn1.png" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/tpn2.png" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/tpn3.png" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/tpn4.png" alt="Fourth slide">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+        <a href="https://www.csg-perses.com"><img class="projectimg rounded" src="img/perses.png"></a>
       </div>
     </div>
+    <u><a href="#contact" class="p-2">Start you new website</a></u>
+  </div>
 
-    <div class="container-fluid mt-5" id="aboutdiv">
-      <h1 class="mb-5">About</h1>
-      <a class="anchor" id="about"></a>
-      <div class="aboutbox m-5">
-        <p>My name is Rob Arkell. I am a full stack web developer based in Waterloo, Canada, and I have a Bachelor of
-          Arts degree from Wilfrid Laurier University.</p>
-        <p>I have previous experience working in civil engineering, manufacturing, operations management, and have also
-          taught English in South Korea. In my free time I also enjoy camping, gaming, travelling, and studying history.
-          These experiences have taught me a lot about constructing well-planned out, functional systems with a global
-          audience in mind, lessons which I strive to integrate into my development work.</p>
-        <p></p>
-      </div>
+  <a class="anchor" id="about"></a>
+  <div class="txt" id="aboutdiv">
+    <h1 class="p-5">About</h1>
+    <div class="pb-5" class="aboutbox">
+      <p>My name is Rob Arkell. I am a full stack web developer based in Waterloo, Canada, and I have a Bachelor of
+        Arts degree from Wilfrid Laurier University.</p>
+      <p>I have previous experience working in civil engineering, manufacturing, operations management, and have also
+        taught English in South Korea. In my free time I also enjoy camping, gaming, travelling, and studying history.
+        These experiences have taught me a lot about constructing well-planned out, functional systems with a global
+        audience in mind, lessons which I strive to integrate into my development work.</p>
+      <p></p>
     </div>
+  </div>
 
-    <div class="container-fluid mt-5" id="contactdiv">
-      <h1 class="mb-5">Contact</h1>
-      <a class="anchor" id="contact"></a>
+  <a class="anchor" id="contact"></a>
+  <div class="container-fluid txt" id="contactdiv">
+    <div>
+      <h1 class="p-5">Contact</h1>
+      <form action="https://www.elformo.com/forms/54b39a32-a996-4009-b782-4b568bd10a3e" method="post"
+        accept-charset="UTF-8">
+        <input id="email" name="email" type="email" />
+        <textarea id="comment" name="comment"></textarea>
+        <input id="submit" name="submit" type="Submit" />
+      </form>
     </div>
+  </div>
 
-    <nav class="navbar fixed-bottom mr-auto">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a href="https://www.github.com/RJArkell/" target="_blank"><img src="img/github.svg" class="social-media"
-              alt="github"></a>
-        </li>
-        <li class="nav-item active"></li>
-        <a href="mailto:info@arnketel.ca" target="_blank"><img src="img/gmail.svg" class="social-media"
-            alt="twitter"></a>
-        </li>
-        <li class="nav-item active"></li>
-        <a href="https://www.linkedin.com/in/rob-arkell-378a2b1a3/" target="_blank"><img src="img/linkedin.svg"
-            class="social-media" alt="linkedin"></a>
-        </li>
-      </ul>
-    </nav>
+  <nav class="navbar fixed-bottom ms-auto ms-2 bottomnav">
+    <ul class="navbar-nav ms-auto ms-2">
+      <li class="nav-item active">
+        <a href="https://www.github.com/RJArkell/" target="_blank"><img src="img/github.svg" class="social-media"
+            alt="github"></a>
+      </li>
+      <li class="nav-item active"></li>
+      <a href="mailto:info@arnketel.ca" target="_blank"><img src="img/gmail.svg" class="social-media" alt="twitter"></a>
+      </li>
+      <li class="nav-item active"></li>
+      <a href="https://www.linkedin.com/in/rob-arkell-378a2b1a3/" target="_blank"><img src="img/linkedin.svg"
+          class="social-media" alt="linkedin"></a>
+      </li>
+    </ul>
+  </nav>
 </body>
 
 </html>
