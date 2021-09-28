@@ -47,7 +47,7 @@ body {
 }
 
 .txt {
-  font-size: 0.8333vw;
+  font-size: 1vw;
 }
 
 #introdiv {
@@ -64,17 +64,17 @@ body {
 }
 
 #aboutdiv {
-  text-align: center;
-  margin: 5vw 10vw;
-  padding: 0 5%;
-  background:  rgb(69, 95, 102)
-}
-
-#contactdiv {
   margin: 0 auto;
   text-align: center;
   padding: 0 10%;
   background:  linear-gradient(to left, rgba(93, 128, 138, 0.9), rgba(69, 95, 102, 0.9) 20% 80%, rgba(93, 128, 138, 0.9));
+}
+
+#contactdiv {
+  text-align: center;
+  margin: 5vw 10vw;
+  padding: 0 5%;
+  background:  rgb(69, 95, 102);
 }
 
 .logo {
