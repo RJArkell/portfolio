@@ -1,17 +1,23 @@
+@font-face {
+  font-family: 'Norse';
+  src: url('NorseBold.otf');
+}
+
 :root {
   --dark-grey: rgb(125, 137, 150);
   --hfont-weight: 700;
   --light-grey: #d6caca;
   --light-blue: #ABC9E7;
+  --green: rgb(144, 171, 179);
 }
 
 a {
   color: var(--light-grey) !important;
-  text-decoration: none !important; 
+  text-decoration: none !important;
 }
 
 a:hover {
-  color: var(--light-blue) !important;
+  color: var(--green) !important;
   text-decoration: underline !important;
 }
 
@@ -27,27 +33,35 @@ a.anchor {
   font-weight: bold;
 }
 
-h1, h2 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: bold !important;
 }
 
 body {
-  background-image:  linear-gradient(to left, rgba(93, 128, 138, 0.9), rgba(69, 95, 102, 0.9) 20% 80%, rgba(93, 128, 138, 0.9)), url("../img/background.png");
+  background-image: linear-gradient(to left, rgba(22, 21, 21, 0.9), rgba(47, 64, 70, 0.9) 20% 80%, rgba(22, 21, 21, 0.9)), url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
   background-attachment: fixed;
-  
+
+}
+
+.brand {
+  font-size: 50px;
+  font-family: 'Norse', Fallback, sans-serif;
 }
 
 .introText {
   padding-top: 17vw;
   display: block;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .txt {
-  font-size: 1vw;
+  font-size: 16px;
 }
 
 #introdiv {
@@ -60,21 +74,20 @@ body {
 #projectsdiv {
   margin: 0 auto;
   padding: 0 10%;
-  background:  linear-gradient(to left, rgba(93, 128, 138, 0.9), rgba(69, 95, 102, 0.9) 20% 80%, rgba(93, 128, 138, 0.9));
+  background: rgb(22, 21, 21);
 }
 
 #aboutdiv {
   margin: 0 auto;
   text-align: center;
   padding: 0 10%;
-  background:  linear-gradient(to left, rgba(93, 128, 138, 0.9), rgba(69, 95, 102, 0.9) 20% 80%, rgba(93, 128, 138, 0.9));
+  background: rgb(47, 64, 70);
 }
 
 #contactdiv {
   text-align: center;
-  margin: 5vw 10vw;
   padding: 0 5%;
-  background:  rgb(69, 95, 102);
+  background: rgb(22, 21, 21);
 }
 
 .logo {
@@ -82,7 +95,7 @@ body {
 }
 
 .projectimg {
-  width: 38vw;
+  width: 100%;
 }
 
 .bottomnav {
@@ -94,7 +107,7 @@ body {
   margin: 0.35vw 1.5vw;
 }
 
-h5{
+h5 {
   text-decoration: underline;
 }
 
@@ -103,16 +116,19 @@ h5{
 }
 
 #menu {
-  font-size: 1.042vw;
-  background: rgb(64, 92, 100);
+  font-family: 'Norse', Fallback, sans-serif;
+  font-size: 28px;
+  background: rgb(22, 21, 21);
   padding: 0 10%;
+  border-bottom: rgb(255, 255, 255);
+  border-radius: 4px;
 }
 
 @-ms-viewport {
   width: device-width;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
   .skill_icon {
     height: 60px;
   }
@@ -123,15 +139,15 @@ h5{
     height: 70px;
   }
 }
-  
-@media (min-width: 1450px){
+
+@media (min-width: 1450px) {
   .skill_icon {
     height: 90px;
   }
 }
 
-@media (max-width: 1750px){
+@media (max-width: 1750px) {
   .projectcard {
-   font-size: 75%;
+    font-size: 75%;
   }
 }
