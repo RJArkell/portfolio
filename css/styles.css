@@ -60,6 +60,7 @@ body {
   font-size: 20px !important;
   color: var(--light-grey) !important;
   margin-top: 6%;
+  font-weight: bold !important;
 }
 
 .linkText {
