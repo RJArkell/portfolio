@@ -30,64 +30,83 @@ a.anchor {
 
 * {
   color: var(--light-grey);
-  font-weight: bold;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-weight: bold !important;
 }
 
 body {
-  background-image: linear-gradient(to left, rgba(22, 21, 21, 0.9), rgba(47, 64, 70, 0.9) 20% 80%, rgba(22, 21, 21, 0.9)), url("../img/background.png");
+  background-image: linear-gradient(rgba(33, 45, 49, 0.95), rgba(33, 45, 49, 0.95)), url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
   background-attachment: fixed;
-
 }
 
-.brand {
+.brandText {
   font-size: 50px;
+  font-weight: bold;
   font-family: 'Norse', Fallback, sans-serif;
 }
 
 .introText {
-  padding-top: 17vw;
   display: block;
   font-size: 50px;
+  font-weight: bold;
 }
 
 .txt {
-  font-size: 16px;
+  font-size: 18px;
+}
+
+.btn {
+  font-size: 20px !important;
+  color: var(--light-grey) !important;
+  margin-top: 6%;
+}
+
+.linkText {
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: 6%;
+}
+
+.divText {
+  font-size: 32px;
+  margin-bottom: 4%;
+  font-weight: bold;
+}
+
+.introBlock {
+  padding-top: 25%;
+  padding-bottom: 25%;
 }
 
 #introdiv {
-  min-height: 94vh;
   text-align: center;
   margin: 0 auto;
   padding: 0 10%;
 }
 
 #projectsdiv {
+  text-align: center;
   margin: 0 auto;
-  padding: 0 10%;
-  background: rgb(22, 21, 21);
+  padding: 4% 10%;
+  background: rgb(19, 26, 29);
+}
+
+.aboutCol {
+  padding: 3% 10% !important;
 }
 
 #aboutdiv {
   margin: 0 auto;
   text-align: center;
-  padding: 0 10%;
-  background: rgb(47, 64, 70);
+  padding: 4% 10%;
 }
 
 #contactdiv {
   text-align: center;
-  padding: 0 5%;
-  background: rgb(22, 21, 21);
+  padding: 4% 10%;
+  background: rgb(19, 26, 29);
 }
 
 .logo {
@@ -96,6 +115,13 @@ body {
 
 .projectimg {
   width: 100%;
+  border: #d6caca;
+}
+
+.profileimg {
+  border-radius: 50%;
+  width: 20vw;
+  margin: 10% 0%;
 }
 
 .bottomnav {
@@ -107,12 +133,17 @@ body {
   margin: 0.35vw 1.5vw;
 }
 
-h5 {
-  text-decoration: underline;
+#email {
+  width: 40%;
+  margin-bottom: 2%;
 }
 
-.skill_icon {
-  height: 90px;
+#submit {
+  margin-top: 2% !important;
+}
+
+#comment {
+  width: 40%;
 }
 
 #menu {
@@ -121,33 +152,48 @@ h5 {
   background: rgb(22, 21, 21);
   padding: 0 10%;
   border-bottom: rgb(255, 255, 255);
-  border-radius: 4px;
 }
 
-@-ms-viewport {
-  width: device-width;
-}
+@media (max-width: 1440px) {
+  .brandText {
+    font-size: 3.5vw;
+  }
 
-@media (max-width: 800px) {
-  .skill_icon {
-    height: 60px;
+  .txt {
+    font-size: 1.5vw;
+  }
+
+  .introText {
+    font-size: 3.5vw;
+  }
+
+  .linkText {
+    font-size: 1.75vw;
+  }
+
+  .btn {
+    font-size: 1.75vw !important;
+  }
+
+  .divText {
+    font-size: 2.5vw;
+  }
+
+  #menu {
+    font-size: 2vw;
+  }
+
+  .profileimg {
+    margin: 20% 0%;
+  }
+
+  #email {
+    width: 60%;
+  }
+
+  #comment {
+    width: 60%;
   }
 }
 
-@media (min-width: 800px) and (max-width: 1450px) {
-  .skill_icon {
-    height: 70px;
-  }
-}
-
-@media (min-width: 1450px) {
-  .skill_icon {
-    height: 90px;
-  }
-}
-
-@media (max-width: 1750px) {
-  .projectcard {
-    font-size: 75%;
-  }
-}
+@media (max-width: 786px) {}

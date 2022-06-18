@@ -20,7 +20,7 @@
 <body>
   <nav id="menu" class="navbar navbar-expand-sm sticky-top">
     <span class="navbar-brand" href="#intro">
-      <h1 class="brand">ARNKETEL</h1>
+      <span class="brandText">ARNKETEL</span>
     </span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,31 +46,29 @@
 
   <div class="container-fluid" id="introdiv">
     <a class="anchor" id="intro"></a>
-    <div>
-      <h1 class="introText mt-5">FULL STACK WEB DEVELOPMENT</h1>
-      <h3 class=" mb-5"></h3>
-      <a class="txt" href="#projects">View featured projects</a>
+    <div class="introBlock">
+      <div class="introText">FULL STACK WEB DEVELOPMENT</div>
+      <a href="#projects"><button type="button" class="linkText btn btn-dark">View featured projects</button></a>
     </div>
   </div>
 
   <a class="anchor" id="projects"></a>
   <div class="container-fluid txt" id="projectsdiv">
-    <h1 class="p-5 text-center">Featured Projects</h1>
+    <div class="divText">Featured Projects</div>
     <div class="row">
       <div class="col-4">
         <div class="">
-          <a href="https://www.yugta.ca"><img class="projectimg rounded" src="img/yugta.png"></a>
+          <a href="https://www.yugta.ca">
+            <img class="projectimg rounded border border-white" src="img/yugta.png">
+          </a>
         </div>
-        <div>
-          <h4 class="m-4 text-center"><u><a href="https://www.yugta.ca">Youth Unlimited Toronto</a></u></h4>
-          <div class="ms-5 me-5">
+        <div class="">
+          <p class="linkText"><u><a href="https://www.yugta.ca">Youth Unlimited Toronto</a></u></p>
+          <div class="">
             <p>Role: Development</p>
             <p><u><a href="https://www.yugta.ca" class="">Youth Unlimited Toronto's website</a></u> was developed to
               allow
-              the organization to have full control over the content and layout of their site. Kirby CMS was used to
-              create a flat file system that requires no external database or file server, thereby limiting the amount
-              of
-              technical knowledge and resources needed to run and maintain the site.</p>
+              the organization to have full control over the content and layout of their site.</p>
           </div>
         </div>
       </div>
@@ -78,16 +76,15 @@
       <div class="col-4">
         <div class="">
           <a href="https://www.thepossiblenow.com/" class="">
-            <img class="projectimg rounded" src="img/tpn.png">
+            <img class="projectimg rounded border border-white" src="img/tpn.png">
           </a>
         </div>
         <div class="">
-          <h4 class="m-4 text-center"><u><a href="https://www.thepossiblenow.com">The Possible Now</a></u></h4>
-          <div class="ms-5 me-5">
+          <p class="linkText"><u><a href="https://www.thepossiblenow.com">The Possible Now</a></u></p>
+          <div class="">
             <p>Role: Development</p>
-            <p><u><a href="https://www.thepossiblenow.com/" class="">The Possible Now</a></u> was developed for <u><a
-                  href="https://www.renga.co/">Renga</a></u> to serve as a foundation to launch their new sustainability
-              focused podcast series from. The site was created to be as environmentally
+            <p><u><a href="https://www.thepossiblenow.com/" class="">The Possible Now</a></u> was developed to be as
+              environmentally
               friendly as possible, and using <u><a href="https://www.websitecarbon.com/">Website Carbon
                   Calculator</a></u> as a gauge, it emits less carbon than 90% of other sites on the internet.</p>
           </div>
@@ -96,41 +93,43 @@
 
       <div class="col-4">
         <div class="">
-          <a href="https://www.csg-perses.com"><img class="projectimg rounded" src="img/perses.png"></a>
+          <a href="https://www.csg-perses.com">
+            <img class="projectimg rounded border border-white" src="img/perses.png">
+          </a>
         </div>
-        <div class="">
-          <h4 class="m-4 text-center"><u><a href="https://www.csg-perses.com">Perses Fleet</a></u></h4>
-          <div class="ms-5 me-5">
+        <div class="text-center">
+          <p class="linkText"><u><a href="https://www.csg-perses.com">Perses Fleet</a></u></p>
+          <div class="">
             <p>Role: Development & Design</p>
             <p><u><a href="https://www.csg-perses.com">Perses Fleet</a></u> was designed and developed
-              for the Star Citizen based gaming organization Perses Fleet to allow them to . It is temporarily offline
-              while it is being updated with a new CMS, but the original code can be viewed <u><a
-                  href="https://github.com/RJArkell/perses-fleet">here</a></u>.</p>
+              for the gaming organization Perses Fleet. It is temporarily
+              offline
+              while it is being updated with a new CMS.
           </div>
         </div>
       </div>
     </div>
-    <div class="text-center p-5">
-      <a href="#contact" class="p-2">Start your new website</a>
-    </div>
+    <a href="#contact"><button type="button" class="linkText btn btn-dark">Start your new website</button></a>
   </div>
 
   <a class="anchor" id="about"></a>
   <div class="container-fluid txt" id="aboutdiv">
-    <h1 class="p-5">About</h1>
-    <div class="pb-5" class="aboutbox">
-      <div class="row mt-5">
-        <div class="col">
-          <p>I am a full stack web developer from Canada, I have a degree from Wilfrid Laurier University and years of
-            experience
-            creating websites.</p>
-          <p>I work with both front end and back end development and UI/UX design, and have also worked alongside design
-            firms.</p>
-          <p>My work has focused mostly on React, PHP, and Kirby CMS and I am developing a Kirby based modular website
-            kit to allow clients to have full control over their website content and style.</p>
+    <div class="divText">About</div>
+    <div class="" class="aboutbox">
+      <div class="row">
+        <div class="col-8 aboutCol">
+          <p>An Edmonton, Alberta based web development company that focuses on creating efficient and easy to use
+            websites.</p>
+          <p>Arnketel is owned and operated by Rob Arkell, a Wilfrid Laurier University graduate with 2 years of web
+            development and
+            design experience.</p>
+          <p>From small, lightweight and eco-friendly sites to large, fully modular sites that give
+            you full control over the layout and content,
+            Arnketel can help you create the perfect website for your business or organization's needs</p>
+          <p>Areas of Expertise: React, Bootstrap, Javascript, PHP, Express, NodeJS, CSS, MongoDB, Kirby CMS, Figma</p>
         </div>
-        <div class="col mb-5">
-          <a href="https://www.csg-perses.com"><img class="projectimg rounded" src="img/perses.png"></a>
+        <div class="col-4">
+          <img class="profileimg" src="img/profile.jpeg">
         </div>
       </div>
     </div>
@@ -138,15 +137,15 @@
 
   <a class="anchor" id="contact"></a>
   <div class="txt" id="contactdiv">
-    <div>
-      <h1 class="p-5">Contact</h1>
-      <form class="pb-5" action="https://www.elformo.com/forms/54b39a32-a996-4009-b782-4b568bd10a3e" method="post"
-        accept-charset="UTF-8">
-        <span class="txt">E-mail: </span><input id="email" name="email" type="email" /><br>
-        <span class="txt">Message: </span><textarea id="comment" name="comment"></textarea><br>
-        <input id="submit" name="submit" type="Submit" />
-      </form>
-    </div>
+    <div class="divText">Contact</div>
+    <form class="" action="https://www.elformo.com/forms/54b39a32-a996-4009-b782-4b568bd10a3e" method="post"
+      accept-charset="UTF-8">
+      <span class="txt">E-mail</span><br>
+      <input id="email" name="email" type="email" /><br>
+      <span class="txt">Message </span><br>
+      <textarea id="comment" rows="6" name="comment"></textarea><br>
+      <input id="submit" class="linkText btn btn-dark" name="submit" type="Submit" />
+    </form>
   </div>
 
   <nav class="navbar fixed-bottom ms-auto ms-2 bottomnav">
