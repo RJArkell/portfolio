@@ -56,6 +56,11 @@ body {
   font-size: 18px;
 }
 
+.logo {
+  width: 48px;
+  margin-right: 10px;
+}
+
 .btn {
   font-size: 20px !important;
   color: var(--light-grey) !important;
@@ -108,10 +113,6 @@ body {
   text-align: center;
   padding: 4% 10%;
   background: rgb(19, 26, 29);
-}
-
-.logo {
-  width: 12vw;
 }
 
 .projectimg {
