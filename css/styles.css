@@ -100,7 +100,7 @@ body {
 }
 
 .aboutCol {
-  padding: 3% 10% !important;
+  padding: 6% 10% !important;
 }
 
 #aboutdiv {
@@ -179,6 +179,10 @@ body {
 
   .divText {
     font-size: 2.5vw;
+  }
+
+  .aboutCol {
+    padding: 3% 10% !important;
   }
 
   #menu {
