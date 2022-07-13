@@ -1,0 +1,201 @@
+.introText,
+a.anchor {
+  display: block
+}
+
+.brandText,
+.introText {
+  font-size: 50px;
+  font-weight: 700
+}
+
+.btn,
+a {
+  color: var(--light-grey) !important
+}
+
+#aboutdiv,
+#introdiv,
+#projectsdiv {
+  margin: 0 auto
+}
+
+#contactdiv,
+#projectsdiv {
+  text-align: center;
+  padding: 4% 10%;
+  background: #131a1d
+}
+
+#comment,
+#email {
+  width: 40%
+}
+
+#menu,
+.brandText {
+  font-family: Norse, Fallback, sans-serif
+}
+
+@font-face {
+  font-family: Norse;
+  src: url('NorseBold.otf')
+}
+
+:root {
+  --dark-grey: rgb(125, 137, 150);
+  --hfont-weight: 700;
+  --light-grey: #d6caca;
+  --light-blue: #ABC9E7;
+  --green: rgb(144, 171, 179)
+}
+
+a {
+  text-decoration: none !important
+}
+
+a:hover {
+  color: var(--green) !important;
+  text-decoration: underline !important
+}
+
+a.anchor {
+  position: relative;
+  top: -3vw;
+  visibility: hidden
+}
+
+* {
+  color: var(--light-grey)
+}
+
+body {
+  background-image: linear-gradient(rgba(33, 45, 49, .95), rgba(33, 45, 49, .95)), url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed
+}
+
+.txt {
+  font-size: 18px
+}
+
+.logo {
+  width: 48px;
+  margin-right: 10px
+}
+
+.btn {
+  font-size: 20px !important;
+  margin-top: 6%;
+  font-weight: 700 !important
+}
+
+.linkText {
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 700;
+  margin-top: 6%
+}
+
+.divText {
+  font-size: 32px;
+  margin-bottom: 4%;
+  font-weight: 700
+}
+
+.introBlock {
+  padding-top: 25%;
+  padding-bottom: 25%
+}
+
+#introdiv {
+  text-align: center;
+  padding: 0 10%
+}
+
+.aboutCol {
+  padding: 6% 10% !important
+}
+
+#aboutdiv {
+  text-align: center;
+  padding: 4% 10%
+}
+
+.projectimg {
+  width: 100%;
+  border: #d6caca
+}
+
+.profileimg {
+  border-radius: 50%;
+  width: 20vw;
+  margin: 10% 0
+}
+
+.bottomnav {
+  width: 5vw
+}
+
+.social-media {
+  width: 2.3vw;
+  margin: .35vw 1.5vw
+}
+
+#email {
+  margin-bottom: 2%
+}
+
+#submit {
+  margin-top: 2% !important
+}
+
+#menu {
+  font-size: 28px;
+  background: #161515;
+  padding: 0 10%;
+  border-bottom: #fff
+}
+
+@media (max-width:1440px) {
+
+  .brandText,
+  .introText {
+    font-size: 3.5vw
+  }
+
+  .txt {
+    font-size: 1.5vw
+  }
+
+  .linkText {
+    font-size: 1.75vw
+  }
+
+  .btn {
+    font-size: 1.75vw !important
+  }
+
+  .divText {
+    font-size: 2.5vw
+  }
+
+  .aboutCol {
+    padding: 3% 10% !important
+  }
+
+  #menu {
+    font-size: 2vw
+  }
+
+  .profileimg {
+    margin: 20% 0
+  }
+
+  #comment,
+  #email {
+    width: 60%
+  }
+}
